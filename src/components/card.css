@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px #0000004d;
+  transform-style: preserve-3d;
+  font-weight: 700;
+  height: 250;
+  cursor: pointer;
+  transition: 0.15s;
+  transform: perspective(1000px) rotateX(var(--rotateX, 0));
+  padding: 2em;
+}
+
+#front {
+  position: absolute;
+  padding: 5px;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+#easy {
+  background-color: #a7eaaed9;
+}
+
+#medium {
+  background-color: #e6e26fd9;
+}
+
+#hard {
+  background-color: #ea9177d9;
+}
